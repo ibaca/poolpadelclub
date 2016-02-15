@@ -1,0 +1,50 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_about"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Pool Pádel Club se crea como proyecto final del curso “Android Study Jam - Spain”. La he creado yo, Ignacio Baca. La aplicación es una mezcla explosiva entre organización de partidos, diarios de actividad, búsqueda de jugadores, punto de encuentro de torneos y rankings dinámicos para competir de formas inimaginables. Y, cuando digo explosiva me refiero a que no sólo nada de esto está implementado, sino que además la aplicación peta allí donde vayas. "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="La intención es lo que cuenta; el código está escrito en Kotlin, se ha intentado reducir la duplicidad al máximo, se ha sido por tanto muy conciso y simple en todo lo implementado y se han intentado aplicar las mejores prácticas aprendidas durante el curso (aunque lo cierto es que no todo se ha aplicado.. el tiempo es oro). "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Espero que aunque el resultado es nefasto, almenos me haya servido para iniciarme en la creación y publicación de aplicaciones en android. Ya veremos...  "/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</merge>
+

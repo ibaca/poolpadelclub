@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pool Pádel Club</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_save">Guardar</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_algorithm">Algoritmos</string>
+    <string name="menu_games">Partidas</string>
+    <string name="menu_history">Historial</string>
+    <string name="menu_login">Iniciar sesión</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="menu_ranking">Clasificación</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_tournament">Torneo</string>
+    <string name="title_activity_about">Acerca de</string>
+    <string name="title_activity_account">Cuenta</string>
+    <string name="title_activity_game_create">Nueva partida</string>
+    <string name="title_activity_game_detail">Partida</string>
+    <string name="title_activity_game_list">Partidas</string>
+    <string name="title_activity_settings">Configuración</string>
+</resources>

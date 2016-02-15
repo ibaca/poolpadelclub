@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="club.poolpadel" >
+<manifest package="club.poolpadel"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- USE_CREDENTIALS is necessary for Google+ login -->
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <!-- GET_ACCOUNTS is necessary to display email address of logged in user. This permission is optional -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
 
     <application
         android:name=".PoolPadel"
@@ -14,25 +11,71 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/AppTheme">
 
-                <category android:name="android.intent.category.LAUNCHER" />
+        <activity
+            android:name=".GameListActivity"
+            android:label="@string/title_activity_game_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".GameDetailActivity"
+            android:label="@string/title_activity_game_detail"
+            android:parentActivityName=".GameListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GameListActivity"/>
+        </activity>
+
+        <activity
+            android:name=".GameCreateActivity"
+            android:label="@string/title_activity_game_create"
+            android:parentActivityName=".GameListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GameListActivity"/>
+        </activity>
+
+        <activity
+            android:name=".AccountActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".GameListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GameListActivity"/>
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".GameListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GameListActivity"/>
+        </activity>
+
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".GameListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="club.poolpadel.MainActivity" />
+                android:value=".GameListActivity"/>
         </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b568c0ed1247db9af4ad3d4ba3178b6f44b196df" />
+
     </application>
 
 </manifest>

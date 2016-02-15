@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/__group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_games"
+            android:icon="@drawable/ic_menu_games"
+            android:title="@string/menu_games"/>
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_history"
+            android:title="@string/menu_history"/>
+        <item
+            android:id="@+id/nav_ranking"
+            android:icon="@drawable/ic_menu_ranking"
+            android:title="@string/menu_ranking"/>
+        <item
+            android:id="@+id/nav_tournament"
+            android:icon="@drawable/ic_menu_tournament"
+            android:title="@string/menu_tournament"/>
+        <item
+            android:id="@+id/nav_algorithm"
+            android:icon="@drawable/ic_menu_algorithm"
+            android:title="@string/menu_algorithm"/>
+    </group>
+
+    <group android:id="@+id/__group2">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/menu_about"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/menu_settings"/>
+    </group>
+
+    <group android:id="@+id/__group3">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_login"
+            android:title="@string/menu_login"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/menu_logout"/>
+    </group>
+
+</menu>

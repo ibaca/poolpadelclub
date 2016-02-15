@@ -9,16 +9,20 @@
               android:paddingLeft="@dimen/activity_horizontal_margin"
               android:paddingRight="@dimen/activity_horizontal_margin"
               android:paddingTop="@dimen/activity_vertical_margin"
+              android:id="@+id/nav_header"
               android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+    <!-- Next link shows an example of how to crop a image using layers -->
+    <!-- http://stackoverflow.com/questions/30346879/android-support-v4-widget-circleimageview-does-not-work -->
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@android:drawable/sym_def_app_icon"/>
+        android:id="@+id/nav_header_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+        android:src="@mipmap/ic_launcher"/>
 
     <TextView
+        android:id="@+id/nav_header_primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -26,7 +30,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nav_header_secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="android.studio@android.com"/>

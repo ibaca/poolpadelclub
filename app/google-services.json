@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_id": "poolpadel",
+    "project_number": "185788079651",
+    "name": "poolpadel"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185788079651:android:ee0bdbf60c0c490b",
+        "client_id": "android:club.poolpadel",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "club.poolpadel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185788079651-d6fvqoibndg0gu1srk011a05h2te4inl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "club.poolpadel",
+            "certificate_hash": "07B9E98D8756D48A54A5B43CF73F71B5A933B1CC"
+          }
+        },
+        {
+          "client_id": "185788079651-33qh0a1iretbuuo3c8186eg6srnkkpcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
